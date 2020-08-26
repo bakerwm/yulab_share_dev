@@ -1,0 +1,152 @@
+################################# Default configuration ###################
+# provide your domain here
+baseURL = "/"
+# theme
+theme = "dot"
+# site title
+title = "Yulab Share"
+# disable language
+disableLanguages = ["Fr"]
+# google analytics
+googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe= true
+
+################################# navigation ################################
+[[menu.main]]
+name = "About"
+url = "about"
+weight = 10
+
+[[menu.main]]
+name = "Faq"
+url = "faq"
+weight = 20
+
+[[menu.main]]
+name = "contact"
+url = "contact"
+weight = 30
+
+# Dropdown menu
+[[menu.main]]
+weight = 40
+name = "docs"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Installation"
+  url = "installation"
+  weight = 1
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Billing and Pricing"
+  url = "billing-pricing"
+  weight = 2
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Features"
+  url = "features"
+  weight = 3
+
+
+############################# Default Parameters ##########################
+[params]
+# logo is for all page
+logo = ""
+# logo white is for homepage logo, you can use colorful logo too...
+logo_white = ""
+# when logo is empty, it will shown your site title
+
+# customize color
+primary_color = "#02007e"
+body_color = "#f9f9f9"
+text_color = "#636363"
+text_color_dark = "#242738"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
+
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+
+
+############################## social links ##############################
+[[params.social]]
+icon = "" # themify icon pack : https://themify.me/themify-icons
+link = ""
+
+[[params.social]]
+icon = "" # themify icon pack : https://themify.me/themify-icons
+link = ""
+
+[[params.social]]
+icon = "" # themify icon pack : https://themify.me/themify-icons
+link = ""
+
+[[params.social]]
+icon = "" # themify icon pack : https://themify.me/themify-icons
+link = ""
+
+################################ English Language ######################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+home = "Home"
+copyright = "YuLab, 2016-2020"
+
+# banner
+[Languages.en.params.banner]
+title = "Info center"
+subtitle = "Find the answers fast"
+bg_image = "images/banner.jpg"
+placeholder = "eg: wifi, HiSeq, Phone, ..."
+
+# call to action
+[Languages.en.params.cta]
+enable = true
+title = "Didn't find an answer to your question?"
+content = "You could ask for help in Yulab wechat group, or sent questions to [wangming@ibp.ac.cn](wangming@ibp.ac.cn)"
+
+# call to action button
+[Languages.en.params.cta.button]
+enable = true
+label = "contact us"
+link = "contact"
+
+
+################################ Chinese Language ######################
+[Languages.cn]
+languageName = "中"
+languageCode = "zh-cn"
+weight = 1
+home = "首页"
+copyright = "俞洋组, 2016-2020"
+
+# banner
+[Languages.cn.params.banner]
+title = "信息中心"
+subtitle = "查找实验室相关信息"
+bg_image = "images/banner.jpg"
+placeholder = "例如：wifi, HiSeq, Phone, ..."
+
+# call to action
+[Languages.cn.params.cta]
+enable = true
+title = "没有找到相关信息?"
+content = "请在俞洋组的微信群里提问，或者发邮件向 wangming@ibp.ac.cn提问。"
+
+# call to action button
+[Languages.cn.params.cta.button]
+enable = true
+label = "联系我们"
+link = "contact"
+
