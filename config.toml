@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "/wm"
+baseURL = "/"
 # theme
 theme = "dot"
 # site title
@@ -110,7 +110,7 @@ copyright = "YuLab, 2016-2020"
 title = "Info center"
 subtitle = "Find the answers fast"
 bg_image = "images/yulab-people-02.jpg"
-placeholder = "eg: wifi, HiSeq, Phone, ..."
+placeholder = "eg: HiSeq, vector ..."
 
 # call to action
 [Languages.en.params.cta]
