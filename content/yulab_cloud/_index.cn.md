@@ -1,8 +1,12 @@
 ---
-date: "2018-12-29T11:02:05+06:00"
-description: Data center of Yulab
+title: "Yulab Cloud"
+draft: false
 icon: ti-server
-title: Yulab Cloud
 type: docs
+description: Data center of Yulab
+date: 2020-08-20T11:02:05+06:00
+lastmod: 2020-08-22T10:42:26+06:00
+# search related keywords
 weight: 1
 ---
+

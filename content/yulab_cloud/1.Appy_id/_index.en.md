@@ -1,13 +1,13 @@
 ---
-date: "2019-12-29T11:02:05+06:00"
+title: "1. 申请账号"
 draft: false
-keywords:
-- "cloud" 
-- "NextCloud" 
-lastmod: "2020-01-05T10:42:26+06:00"
-title: 1. 申请账号
+date: 2020-08-20T11:02:05+06:00
+lastmod: 2020-08-22T10:42:26+06:00
+# search related keywords
+keywords: ["Nextcloud", "install"]
 weight: 1
 ---
+
 
 申请Yulab Cloud账号
 
