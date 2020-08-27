@@ -1,0 +1,46 @@
+---
+title: "ggplot2"
+author: ''
+date: '2020-08-26T21:13:14-05:00'
+categories: vector
+tags: ["vector", "plasmid", "ggplot2"]
+---
+
+```{r global options, echo=FALSE}
+library(knitr)
+knitr::opts_chunk$set(fig.width = 12, 
+                      fig.height = 8, 
+                      #fig.path = 'Figs/',
+                      echo = FALSE,
+                      eval = TRUE,
+                      cache = FALSE,
+                      prompt = FALSE,
+                      tidy = FALSE,
+                      comment = NA,
+                      message = FALSE,
+                      warning = FALSE,
+                      rownames.print = FALSE,
+                      collapse = TRUE)
+options(width=150)
+```
+
+
+
+```{r fig.width=5, fig.height=5}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + 
+  geom_point()
+
+````
+
+
+```{r}
+library(DT)
+DT::datatable(mtcars)
+```
+
+
+
+
+
+
