@@ -38,11 +38,14 @@ She has authored more than 250 primary articles and reviews, and has received a 
 
 <!-- {{< youtube UxSJbdBH1Mo>}} -->
 
+
 <video width="640" height="480" controls>
   <source src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2019-IMP.mp4" type="video/mp4">
   <track label="English" kind="subtitles" srclang="en" src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2019-IMP.vtt" default>
   Your browser does not support the video tag.
 </video>
+
+[Vedio on Youtube](https://www.youtube.com/watch?v=UxSJbdBH1Mo)
 
 Title: Organizing-and-stabilizing-genomes-through-heterochromatic-and-euchormatic-domains  
 
@@ -57,14 +60,18 @@ Date: March 2019
 
 <!-- {{< youtube q8D-OppWYY0>}} -->
 
+
 <video width="640" height="480" controls>
   <source src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2020-MCB.mp4" type="video/mp4">
   <track label="English" kind="subtitles" srclang="en" src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2020-MCB.vtt" default>
   Your browser does not support the video tag.
 </video>
 
+[Vedio on Youtube](https://www.youtube.com/watch?v=q8D-OppWYY0)
 
 Title: Zooming Molecular & Cellular Biology: Talk by Dr Susan Gasser   
+
+Title: How and where to assemble hetrochromatin, and why it is essential for organismal suvival
 
 Date: Aug 29, 2020
 

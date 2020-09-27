@@ -8,6 +8,10 @@ draft: false
 keywords: ["WiFi", "Phone"]
 ---
 
+<p><a href="http://192.168.206.171/yulab_cloud/index.php/s/ezQEw7dgS8aKFS3">
+  <img src="yulab_cloud_software.png" alt="yulab_cloud_software" width="600" height="100%">
+</a></p>
+
 + `Yulab Cloud` [软件下载](http://192.168.206.171/yulab_cloud/index.php/s/ezQEw7dgS8aKFS3)
 
 + 请使用 [电脑管家](https://guanjia.qq.com/) 管理软件：[https://guanjia.qq.com/](https://guanjia.qq.com/)
@@ -19,11 +23,9 @@ keywords: ["WiFi", "Phone"]
 {{</ notice >}}
 
 
-<figure>
-  <img target="_blank" rel="noopener noreferrer" src="windows-10-logo.png" alt="windows-10-logo" width="300" height="100%">
-</figure>
-
-
+<p><a href="http://192.168.50.9">
+  <img src="windows-10-logo.png" alt="windows-10-logo" width="300" height="100%">
+</a></p>
 
 可下载软件： `Office 2019`, `Windows 10`
 
