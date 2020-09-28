@@ -1,16 +1,14 @@
 ---
-title: "2. 安装"
+title: "3. 安装客户端"
 draft: false
 date: 2020-08-20T11:02:05+06:00
 lastmod: 2020-08-22T10:42:26+06:00
 # search related keywords
 keywords: ["Nextcloud", "install"]
-weight: 21
+weight: 31
 ---
 
-
-## 2.1 下载客户端
-
+## 3.1 下载客户端
 
 <figure>
   <img src="nextcloud-client-logo.png" alt="Nextcloud-logo" width="100%" height="300">
@@ -24,7 +22,7 @@ weight: 21
 + macOS: [Nextcloud-3.0.0.pkg](https://download.nextcloud.com/desktop/releases/Mac/Installer/latest)
 
 
-## 2.2 安装
+## 3.2 安装
 
 按照 **默认** 设置安装。
 

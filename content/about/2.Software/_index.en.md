@@ -8,18 +8,27 @@ draft: false
 keywords: ["WiFi", "Phone"]
 ---
 
+## 2.1 本地下载
+
+> 此处软件大多来自互联网，有可能涉及侵权使用，请勿传播，并于下载后及时删除。
+
 <p><a href="http://192.168.206.171/yulab_cloud/index.php/s/ezQEw7dgS8aKFS3">
   <img src="yulab_cloud_software.png" alt="yulab_cloud_software" width="600" height="100%">
 </a></p>
 
-+ `Yulab Cloud` [软件下载](http://192.168.206.171/yulab_cloud/index.php/s/ezQEw7dgS8aKFS3)
++ `Yulab Cloud` [本地下载](http://192.168.206.171/yulab_cloud/index.php/s/ezQEw7dgS8aKFS3)
 
 + 请使用 [电脑管家](https://guanjia.qq.com/) 管理软件：[https://guanjia.qq.com/](https://guanjia.qq.com/)
 
-## 2.1 正版软件 
+<p><a href="https://guanjia.qq.com/">
+  <img src="pc_guanjia.png" alt="pc_guanjia" width="150" height="100%">
+</a></p>
+
+
+## 2.2 正版软件 
 
 {{< notice note >}}
-正版软件按次付费，课题组已统一付款，仅供**课题组内**电脑使用，请大家**保管好账号密码**，不外传。 
+正版软件是研究所统一购买，按次付费，课题组已统一付款，仅供**课题组内**电脑使用，请大家**保管好账号密码**，不外传。 
 {{</ notice >}}
 
 
@@ -41,7 +50,7 @@ ID：yuyang-lab， Password：***@***
 5. 等待 几分钟，即可完成激活（需要联网）  
 ```
 
-## 2.2 其他软件
+## 2.3 其他软件
 
 {{< notice tip >}}
 以下软件多来自互联网，如涉及侵权，请务必于下载后24小时内自行删除，不可外传
@@ -61,11 +70,11 @@ SnapGene 4.1.9 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/3Jw
 
 
 
-### 2.2.2 画图软件 - Graphpad Prism       
+### 2.3.2 画图软件 - Graphpad Prism       
 
 
 <figure>
-  <img target="_blank" rel="noopener noreferrer" src="graphpad-prism-8-logo.png" alt="graphpad-prism-logo" target="_blank" width="600" height="100%">
+  <img target="_blank" rel="noopener noreferrer" src="graphpad-prism-8-logo.png" alt="graphpad-prism-logo" target="_blank" width="400" height="100%">
 </figure>
 
 
@@ -75,28 +84,26 @@ SnapGene 4.1.9 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/3Jw
   - Graphpad prism 8 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/g4ifjGnHmenxWHs)
 
 
-### 2.2.3 图像处理 - Image studio    
+### 2.3.3 图像处理 - Image studio    
 
 Image studio [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/pbQQw28SMs24z6m)
 
 
-### 2.2.4 Flowjo VX 
+### 2.3.4 Flowjo VX 
 
 <figure>
-  <img target="_blank" rel="noopener noreferrer" src="flowjo-vx-logo.png" alt="gflowjo-vx-logo" target="_blank" width="600" height="100%">
+  <img target="_blank" rel="noopener noreferrer" src="flowjo-vx-logo.png" alt="gflowjo-vx-logo" target="_blank" width="400" height="100%">
 </figure>
 
 Flowjo VX [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/WaToYnzNkc64AkP)    
 
 
-### 2.2.5 引物设计 Premier Primer 5.0  
+### 2.3.5 引物设计 Premier Primer 5.0  
 
 Premier Primer 5.0 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/XZH8StiwbEJ9qqt)    
 
 
-## 2.3 免费软件
-
-### 2.3.1 FTP下载工具 - Filezilla
+### 2.3.6 FTP下载工具 - Filezilla
 
 <figure>
   <img target="_blank" rel="noopener noreferrer" src="filezilla-logo.png" alt="gflowjo-vx-logo" target="_blank" width="300" height="100%">
@@ -109,10 +116,10 @@ Premier Primer 5.0 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s
 
 
 
-### 2.3.2 SSH客户端 - MobaXterm 
+### 2.3.7 SSH客户端 - MobaXterm 
 
 <figure>
-  <img target="_blank" rel="noopener noreferrer" src="mobaxterm-logo.png" alt="mobaxterm-logo" target="_blank" width="600" height="100%">
+  <img target="_blank" rel="noopener noreferrer" src="mobaxterm-logo.png" alt="mobaxterm-logo" target="_blank" width="400" height="100%">
 </figure>
 
 `MobaXterm`是一款非常强大的终端增强工具，除了支持基本`SSH`终端管理之外，还有非常多扩赞功能。    
@@ -121,10 +128,10 @@ Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools 
 [官网下载](https://mobaxterm.mobatek.net/download.html), [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/ZWwDoa5FqSXatga) MobaXterm v11.0 protable; 
 
 
-### 2.3.3 文本编辑 - Notepad ++  
+### 2.3.8 文本编辑 - Notepad ++  
 
 <figure>
-  <img target="_blank" rel="noopener noreferrer" src="notepad++-logo.png" alt="notepad++-logo" target="_blank" width="300" height="100%">
+  <img target="_blank" rel="noopener noreferrer" src="notepad++-logo.png" alt="notepad++-logo" target="_blank" width="200" height="100%">
 </figure>
 
 `Notepad ++`是一个用于编写文本的免费开源应用程序。`Notepad ++`是一个功能强大的编辑器，非常适合编程和普通文本。
