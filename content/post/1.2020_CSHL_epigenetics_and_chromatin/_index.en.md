@@ -1,5 +1,5 @@
 ---
-title: "2020 CSHL Epigenetics & Chromatin"
+title: "1. 2020 CSHL Epigenetics & Chromatin"
 description: 
 icon: ti-upload
 # type: docs

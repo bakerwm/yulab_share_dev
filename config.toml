@@ -24,7 +24,7 @@ weight = 10
 
 [[menu.main]]
 name = "Faq"
-url = "post"
+url = "faq"
 weight = 20
 
 [[menu.main]]
