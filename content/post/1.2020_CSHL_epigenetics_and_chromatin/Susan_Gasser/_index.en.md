@@ -12,7 +12,7 @@ weight: 1
 ### [Susan Gasser]() 
 
 
-<img src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser.jpg" alt="Susan Gasser" width="200" height="150">
+<img src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser/Susan-Gasser.jpg" alt="Susan Gasser" width="200" height="150">
 
 
 [Lab website](https://www.fmi.ch/research-groups/groupleader.html?group=42)
@@ -40,8 +40,8 @@ She has authored more than 250 primary articles and reviews, and has received a 
 
 
 <video width="640" height="480" controls>
-  <source src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2019-IMP.mp4" type="video/mp4">
-  <track label="English" kind="subtitles" srclang="en" src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2019-IMP.vtt" default>
+  <source src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser/Susan-Gasser-2019-IMP.mp4" type="video/mp4">
+  <track label="English" kind="subtitles" srclang="en" src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser/Susan-Gasser-2019-IMP.vtt" default>
   Your browser does not support the video tag.
 </video>
 
@@ -62,8 +62,8 @@ Date: March 2019
 
 
 <video width="640" height="480" controls>
-  <source src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2020-MCB.mp4" type="video/mp4">
-  <track label="English" kind="subtitles" srclang="en" src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser-2020-MCB.vtt" default>
+  <source src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser/Susan-Gasser-2020-MCB.mp4" type="video/mp4">
+  <track label="English" kind="subtitles" srclang="en" src="http://159.226.118.232/upload/img/2020_CSHL_videos/Susan-Gasser/Susan-Gasser-2020-MCB.vtt" default>
   Your browser does not support the video tag.
 </video>
 
