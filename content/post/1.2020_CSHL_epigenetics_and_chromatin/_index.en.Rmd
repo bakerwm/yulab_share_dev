@@ -1,5 +1,5 @@
 ---
-title: "1. 2020 CSHL Epigenetics & Chromatin"
+title: "1.2020 CSHL Epigenetics & Chromatin"
 description: 
 icon: ti-upload
 # type: docs
@@ -63,48 +63,39 @@ df    <- data.frame(group = dirname(vlist),
 # 20200916
 df1 <- df %>%
   filter(group %in% c("20200916")) %>%
-  dplyr::select(link, note)
+  dplyr::select(link, note) %>%
+  tibble::rowid_to_column("Count")
   
 # 20201001
 df2 <- df %>%
   filter(group %in% c("20201001")) %>%
-  dplyr::select(link, note)
+  dplyr::select(link, note) %>%
+  tibble::rowid_to_column("Count")
 
 # 20201002
 df3 <- df %>%
   filter(group %in% c("20201002")) %>%
-  dplyr::select(link, note)
+  dplyr::select(link, note) %>%
+  tibble::rowid_to_column("Count")
 ```
 
 #### part1: 2020-09-16 uploaded
 
 ```{r, echo = FALSE}
-DT::datatable(df1, escape = FALSE, options = list(
-  pageLength = 40,
-  dom = "tlp"
-))
+knitr::kable(df1)
 ```
 
 #### part2: 2020-10-01 uploaded
 
 ```{r, echo = FALSE}
-DT::datatable(df2, escape = FALSE, options = list(
-  pageLength = 40,
-  dom = "tlp"
-))
+knitr::kable(df2)
 ```
-
 
 #### part3: 2020-10-02 uploaded
 
 ```{r, echo = FALSE}
-DT::datatable(df3, escape = FALSE, options = list(
-  pageLength = 40,
-  dom = "tlp"
-))
+knitr::kable(df3)
 ```
-
-
 
 <!-- + 01  -->
 
