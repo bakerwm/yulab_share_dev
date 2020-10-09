@@ -139,3 +139,31 @@ Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools 
 [官网下载](https://notepad-plus-plus.org/download/v7.6.2.html), [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/dfYGJ6BJ54bAznn)
 
 
+
+### 2.3.9 视频录制工具 - Captura
+
+<figure>
+  <img target="_blank"  src="http://159.226.118.232/upload/img/2020_CSHL_videos/Video_recorder/Captura-screen.png" alt="Captura" target="_blank" width="400" height="100%">
+</figure>
+
+参考知乎回答：[有哪些值得推荐的电脑录屏软件与手机录屏软件？](https://www.zhihu.com/question/22371082) - by `霸都、傲天`
+
+1. 通过 **录频工具** 录制视频，例如：开源工具  [Captura](https://mathewsachin.github.io/Captura/), [下载地址](https://github.com/MathewSachin/Captura/releases/download/v8.0.0/Captura-Setup.exe), 同时下载辅助工具 [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
+
+2. 双击运行 `Captura-Setup.exe`，按照默认方式安装；
+
+3. 解压缩`FFmpeg`;
+
+4. 在 `Captura`界面，`Video Source`，选择第5个**Region**，将弹出的虚线框和视频播放界面对齐；
+
+5. 在`Captura`界面，`Audio`，将麦克风图标点开，勾选Audio的全部选项；  
+
+6. 在`Captura`界面，`Video Encoder`选择 `FPS: 9`, `Quality: 60%`
+
+7. 在`Captura`界面，底部 `Output Folder`，选择一个 D盘的文件夹，例如：`D:\Videos`;  
+
+8. 开始录制；先播放视频，再点击 "红色圆点"开始录制。
+
+9. 首次录制时，会提示`FFmpeg`未找到，点击`Select FFmpeg folder`，找到**步骤3**的文件位置 `ffmpeg-2020-10-07-git-a086b73e1f-full_build\bin`，可以解决问题。
+
+

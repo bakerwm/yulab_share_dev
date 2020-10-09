@@ -1,5 +1,5 @@
 ---
-title: "1. 2020 CSHL Epigenetics & Chromatin"
+title: "1.2020 CSHL Epigenetics & Chromatin"
 description: 
 icon: ti-upload
 # type: docs
@@ -20,6 +20,28 @@ output:
 ~~Click here, find the videos uploaded by Yu and Yuan~~ [本链接已失效，请改用FTP工具上传，详情咨询课题组微信群]
 
 -->
+
+
+#### 视频上传通道
+
+1. 下载工具：`FileZilla`: [windows 64位绿色版](https://download.filezilla.cn/client/windows/FileZilla_3.50.0_win64.zip);   [其他版本](https://www.filezilla.cn/download/client)
+
+2. 解压缩下载的文件 `FileZilla_3.50.0_win64.zip`, 找到文件夹内的 `FileZilla.exe`，双击打开。
+
+3. 在`FileZilla`软件顶部区域输入如下信息，随后点击`快速连接` 
+
+```
+地址：   159.226.118.232  
+用户名： temp001
+密码：   <课题组通用密码>  
+端口：   21
+```
+
+4. 在`Filezilla`软件中部操作区：左侧是**本地电脑**；右侧是**远程服务器**；
+
+右侧 选择 `upload`；左侧 选择视频存放的文件夹，右键选择需要上传的文件，点击**上传**，即可！
+
+
 
 
 ### Meeting
@@ -43,7 +65,7 @@ Yang Shi, Harvard Medical School
 
 ### Highlight: 
 
-+ [Susan Gasser](/yulab_share/post/2020_cshl_epigenetics_and_chromatin/susan_gasser/) - Friedrich Miescher Institute for Biomedical Research, Switzerland
++ [Susan Gasser](/yulab_share/post/1.2020_cshl_epigenetics_and_chromatin/susan_gasser/) - Friedrich Miescher Institute for Biomedical Research, Switzerland
 
 ### 2020 CSHL videos 
 
@@ -51,21 +73,91 @@ Yang Shi, Harvard Medical School
 
 #### part1: 2020-09-16 uploaded
 
-<!--html_preserve--><div id="htmlwidget-9ebf91c3ef479feb6a41" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9ebf91c3ef479feb6a41">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10"],["<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_223943.mp4' target='_blank'>VID_20200916_223943.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_225521.mp4' target='_blank'>VID_20200916_225521.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_231616.mp4' target='_blank'>VID_20200916_231616.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_233123.mp4' target='_blank'>VID_20200916_233123.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_001413.mp4' target='_blank'>VID_20200917_001413.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_221721.mp4' target='_blank'>VID_20200917_221721.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_223259.mp4' target='_blank'>VID_20200917_223259.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_225112.mp4' target='_blank'>VID_20200917_225112.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_230859.mp4' target='_blank'>VID_20200917_230859.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_232510.mp4' target='_blank'>VID_20200917_232510.mp4<\/a>"],["leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>link<\/th>\n      <th>note<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":40,"dom":"tlp","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[10,25,40,50,100]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+
+| Count|title           |speaker   |link                                                                                                                                      |
+|-----:|:---------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+|     1|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_223943.mp4' target='_blank'>VID_20200916_223943.mp4</a> |
+|     2|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_225521.mp4' target='_blank'>VID_20200916_225521.mp4</a> |
+|     3|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_231616.mp4' target='_blank'>VID_20200916_231616.mp4</a> |
+|     4|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200916_233123.mp4' target='_blank'>VID_20200916_233123.mp4</a> |
+|     5|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_001413.mp4' target='_blank'>VID_20200917_001413.mp4</a> |
+|     6|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_221721.mp4' target='_blank'>VID_20200917_221721.mp4</a> |
+|     7|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_223259.mp4' target='_blank'>VID_20200917_223259.mp4</a> |
+|     8|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_225112.mp4' target='_blank'>VID_20200917_225112.mp4</a> |
+|     9|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_230859.mp4' target='_blank'>VID_20200917_230859.mp4</a> |
+|    10|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20200916/VID_20200917_232510.mp4' target='_blank'>VID_20200917_232510.mp4</a> |
 
 #### part2: 2020-10-01 uploaded
 
-<!--html_preserve--><div id="htmlwidget-c702b14a9a09886155c4" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c702b14a9a09886155c4">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],["<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/035A39BD-4C89-4747-8312-594AA7B2D4C4.MOV' target='_blank'>035A39BD-4C89-4747-8312-594AA7B2D4C4.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/068B8A59-4C2F-4AAC-B3BC-9AE1AB2EAC91.MOV' target='_blank'>068B8A59-4C2F-4AAC-B3BC-9AE1AB2EAC91.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/308A3478-EE32-48CD-B226-5F9B44D7C708.MOV' target='_blank'>308A3478-EE32-48CD-B226-5F9B44D7C708.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/54E35F4F-C21D-46D1-95BB-F020F82D8AA8.MOV' target='_blank'>54E35F4F-C21D-46D1-95BB-F020F82D8AA8.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/8D04C0F6-6FCE-4ADA-A11F-E680DA4B8702.MOV' target='_blank'>8D04C0F6-6FCE-4ADA-A11F-E680DA4B8702.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/A7EE3A73-5722-4099-A3E1-6E9FEBCF9784.MOV' target='_blank'>A7EE3A73-5722-4099-A3E1-6E9FEBCF9784.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/A9A49F69-0011-44DA-B5FD-F973091B5743.MOV' target='_blank'>A9A49F69-0011-44DA-B5FD-F973091B5743.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/D2CAFE6B-E7B9-4B45-B12B-81C6B5EDD1BA.MOV' target='_blank'>D2CAFE6B-E7B9-4B45-B12B-81C6B5EDD1BA.MOV<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20200930_225524.mp4' target='_blank'>VID_20200930_225524.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20200930_231527.mp4' target='_blank'>VID_20200930_231527.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20200930_234746.mp4' target='_blank'>VID_20200930_234746.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_000129.mp4' target='_blank'>VID_20201001_000129.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_002057.mp4' target='_blank'>VID_20201001_002057.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_003710.mp4' target='_blank'>VID_20201001_003710.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_005905.mp4' target='_blank'>VID_20201001_005905.mp4<\/a>"],["leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>link<\/th>\n      <th>note<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":40,"dom":"tlp","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[10,25,40,50,100]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
+| Count|title           |speaker   |link                                                                                                                                                                        |
+|-----:|:---------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    11|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/035A39BD-4C89-4747-8312-594AA7B2D4C4.MOV' target='_blank'>035A39BD-4C89-4747-8312-594AA7B2D4C4.MOV</a> |
+|    12|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/068B8A59-4C2F-4AAC-B3BC-9AE1AB2EAC91.MOV' target='_blank'>068B8A59-4C2F-4AAC-B3BC-9AE1AB2EAC91.MOV</a> |
+|    13|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/308A3478-EE32-48CD-B226-5F9B44D7C708.MOV' target='_blank'>308A3478-EE32-48CD-B226-5F9B44D7C708.MOV</a> |
+|    14|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/54E35F4F-C21D-46D1-95BB-F020F82D8AA8.MOV' target='_blank'>54E35F4F-C21D-46D1-95BB-F020F82D8AA8.MOV</a> |
+|    15|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/8D04C0F6-6FCE-4ADA-A11F-E680DA4B8702.MOV' target='_blank'>8D04C0F6-6FCE-4ADA-A11F-E680DA4B8702.MOV</a> |
+|    16|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/A7EE3A73-5722-4099-A3E1-6E9FEBCF9784.MOV' target='_blank'>A7EE3A73-5722-4099-A3E1-6E9FEBCF9784.MOV</a> |
+|    17|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/A9A49F69-0011-44DA-B5FD-F973091B5743.MOV' target='_blank'>A9A49F69-0011-44DA-B5FD-F973091B5743.MOV</a> |
+|    18|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/D2CAFE6B-E7B9-4B45-B12B-81C6B5EDD1BA.MOV' target='_blank'>D2CAFE6B-E7B9-4B45-B12B-81C6B5EDD1BA.MOV</a> |
+|    19|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20200930_225524.mp4' target='_blank'>VID_20200930_225524.mp4</a>                                   |
+|    20|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20200930_231527.mp4' target='_blank'>VID_20200930_231527.mp4</a>                                   |
+|    21|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20200930_234746.mp4' target='_blank'>VID_20200930_234746.mp4</a>                                   |
+|    22|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_000129.mp4' target='_blank'>VID_20201001_000129.mp4</a>                                   |
+|    23|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_002057.mp4' target='_blank'>VID_20201001_002057.mp4</a>                                   |
+|    24|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_003710.mp4' target='_blank'>VID_20201001_003710.mp4</a>                                   |
+|    25|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201001/VID_20201001_005905.mp4' target='_blank'>VID_20201001_005905.mp4</a>                                   |
 
 #### part3: 2020-10-02 uploaded
 
-<!--html_preserve--><div id="htmlwidget-87fc71563e676a4e61f9" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-87fc71563e676a4e61f9">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32"],["<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20200918_224201.mp4' target='_blank'>VID_20200918_224201.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20200918_230932.mp4' target='_blank'>VID_20200918_230932.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20200918_233010.mp4' target='_blank'>VID_20200918_233010.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_222205.mp4' target='_blank'>VID_20201001_222205.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_223733.mp4' target='_blank'>VID_20201001_223733.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_225249.mp4' target='_blank'>VID_20201001_225249.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_230744.mp4' target='_blank'>VID_20201001_230744.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_231114.mp4' target='_blank'>VID_20201001_231114.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_000326.mp4' target='_blank'>VID_20201002_000326.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_002447.mp4' target='_blank'>VID_20201002_002447.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_022239.mp4' target='_blank'>VID_20201002_022239.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_023856.mp4' target='_blank'>VID_20201002_023856.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_025518.mp4' target='_blank'>VID_20201002_025518.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_031154.mp4' target='_blank'>VID_20201002_031154.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_034807.mp4' target='_blank'>VID_20201002_034807.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_040248.mp4' target='_blank'>VID_20201002_040248.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_041958.mp4' target='_blank'>VID_20201002_041958.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_044554.mp4' target='_blank'>VID_20201002_044554.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_222847.mp4' target='_blank'>VID_20201002_222847.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_224557.mp4' target='_blank'>VID_20201002_224557.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_230944.mp4' target='_blank'>VID_20201002_230944.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_232845.mp4' target='_blank'>VID_20201002_232845.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_000458.mp4' target='_blank'>VID_20201003_000458.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_002245.mp4' target='_blank'>VID_20201003_002245.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_003934.mp4' target='_blank'>VID_20201003_003934.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_010606.mp4' target='_blank'>VID_20201003_010606.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_01_59_31_Pro.mp4' target='_blank'>WIN_20201003_01_59_31_Pro.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_02_19_18_Pro.mp4' target='_blank'>WIN_20201003_02_19_18_Pro.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_02_35_52_Pro.mp4' target='_blank'>WIN_20201003_02_35_52_Pro.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_03_11_50_Pro.mp4' target='_blank'>WIN_20201003_03_11_50_Pro.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_03_35_38_Pro.mp4' target='_blank'>WIN_20201003_03_35_38_Pro.mp4<\/a>","<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_03_52_30_Pro.mp4' target='_blank'>WIN_20201003_03_52_30_Pro.mp4<\/a>"],["leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here","leave a note here"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>link<\/th>\n      <th>note<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":40,"dom":"tlp","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[10,25,40,50,100]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+
+| Count|title           |speaker   |link                                                                                                                                                  |
+|-----:|:---------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|    26|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20200918_224201.mp4' target='_blank'>VID_20200918_224201.mp4</a>             |
+|    27|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20200918_230932.mp4' target='_blank'>VID_20200918_230932.mp4</a>             |
+|    28|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20200918_233010.mp4' target='_blank'>VID_20200918_233010.mp4</a>             |
+|    29|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_222205.mp4' target='_blank'>VID_20201001_222205.mp4</a>             |
+|    30|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_223733.mp4' target='_blank'>VID_20201001_223733.mp4</a>             |
+|    31|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_225249.mp4' target='_blank'>VID_20201001_225249.mp4</a>             |
+|    32|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_230744.mp4' target='_blank'>VID_20201001_230744.mp4</a>             |
+|    33|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201001_231114.mp4' target='_blank'>VID_20201001_231114.mp4</a>             |
+|    34|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_000326.mp4' target='_blank'>VID_20201002_000326.mp4</a>             |
+|    35|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_002447.mp4' target='_blank'>VID_20201002_002447.mp4</a>             |
+|    36|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_022239.mp4' target='_blank'>VID_20201002_022239.mp4</a>             |
+|    37|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_023856.mp4' target='_blank'>VID_20201002_023856.mp4</a>             |
+|    38|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_025518.mp4' target='_blank'>VID_20201002_025518.mp4</a>             |
+|    39|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_031154.mp4' target='_blank'>VID_20201002_031154.mp4</a>             |
+|    40|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_034807.mp4' target='_blank'>VID_20201002_034807.mp4</a>             |
+|    41|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_040248.mp4' target='_blank'>VID_20201002_040248.mp4</a>             |
+|    42|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_041958.mp4' target='_blank'>VID_20201002_041958.mp4</a>             |
+|    43|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_044554.mp4' target='_blank'>VID_20201002_044554.mp4</a>             |
+|    44|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_222847.mp4' target='_blank'>VID_20201002_222847.mp4</a>             |
+|    45|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_224557.mp4' target='_blank'>VID_20201002_224557.mp4</a>             |
+|    46|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_230944.mp4' target='_blank'>VID_20201002_230944.mp4</a>             |
+|    47|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201002_232845.mp4' target='_blank'>VID_20201002_232845.mp4</a>             |
+|    48|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_000458.mp4' target='_blank'>VID_20201003_000458.mp4</a>             |
+|    49|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_002245.mp4' target='_blank'>VID_20201003_002245.mp4</a>             |
+|    50|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_003934.mp4' target='_blank'>VID_20201003_003934.mp4</a>             |
+|    51|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/VID_20201003_010606.mp4' target='_blank'>VID_20201003_010606.mp4</a>             |
+|    52|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_01_59_31_Pro.mp4' target='_blank'>WIN_20201003_01_59_31_Pro.mp4</a> |
+|    53|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_02_19_18_Pro.mp4' target='_blank'>WIN_20201003_02_19_18_Pro.mp4</a> |
+|    54|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_02_35_52_Pro.mp4' target='_blank'>WIN_20201003_02_35_52_Pro.mp4</a> |
+|    55|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_03_11_50_Pro.mp4' target='_blank'>WIN_20201003_03_11_50_Pro.mp4</a> |
+|    56|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_03_35_38_Pro.mp4' target='_blank'>WIN_20201003_03_35_38_Pro.mp4</a> |
+|    57|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201002/WIN_20201003_03_52_30_Pro.mp4' target='_blank'>WIN_20201003_03_52_30_Pro.mp4</a> |
+
+#### part4: 2020-10-08 uploaded
 
 
+| Count|title           |speaker   |link                                                                                                                                      |
+|-----:|:---------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+|    58|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_023115.mp4' target='_blank'>VID_20201008_023115.mp4</a> |
+|    59|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_025632.mp4' target='_blank'>VID_20201008_025632.mp4</a> |
+|    60|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_032939.mp4' target='_blank'>VID_20201008_032939.mp4</a> |
+|    61|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_040735.mp4' target='_blank'>VID_20201008_040735.mp4</a> |
+|    62|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_043405.mp4' target='_blank'>VID_20201008_043405.mp4</a> |
+|    63|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_044939.mp4' target='_blank'>VID_20201008_044939.mp4</a> |
+|    64|This is a title |Name Name |<a href='http://159.226.118.232/upload/img/2020_CSHL_videos/20201008/VID_20201008_050713.mp4' target='_blank'>VID_20201008_050713.mp4</a> |
 
 <!-- + 01  -->
 

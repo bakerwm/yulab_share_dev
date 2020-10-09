@@ -22,6 +22,28 @@ output:
 -->
 
 
+#### 视频上传通道
+
+1. 下载工具：`FileZilla`: [windows 64位绿色版](https://download.filezilla.cn/client/windows/FileZilla_3.50.0_win64.zip);   [其他版本](https://www.filezilla.cn/download/client)
+
+2. 解压缩下载的文件 `FileZilla_3.50.0_win64.zip`, 找到文件夹内的 `FileZilla.exe`，双击打开。
+
+3. 在`FileZilla`软件顶部区域输入如下信息，随后点击`快速连接` 
+
+```
+地址：   159.226.118.232  
+用户名： temp001
+密码：   <课题组通用密码>  
+端口：   21
+```
+
+4. 在`Filezilla`软件中部操作区：左侧是**本地电脑**；右侧是**远程服务器**；
+
+右侧 选择 `upload`；左侧 选择视频存放的文件夹，右键选择需要上传的文件，点击**上传**，即可！
+
+
+
+
 ### Meeting
 
 September 15 - 18 2020 Virtual    
@@ -43,7 +65,7 @@ Yang Shi, Harvard Medical School
 
 ### Highlight: 
 
-+ [Susan Gasser](/yulab_share/post/2020_cshl_epigenetics_and_chromatin/susan_gasser/) - Friedrich Miescher Institute for Biomedical Research, Switzerland
++ [Susan Gasser](/yulab_share/post/1.2020_cshl_epigenetics_and_chromatin/susan_gasser/) - Friedrich Miescher Institute for Biomedical Research, Switzerland
 
 ### 2020 CSHL videos 
 
@@ -57,26 +79,31 @@ vlist <- readLines("./video_list.txt")
 df    <- data.frame(group = dirname(vlist),
                     fname = basename(vlist),
                     url   = file.path(baseurl, vlist), 
-                    note  = "leave a note here") %>%
-  mutate(link = paste0("<a href='", url, "' target='_blank'>", fname, "</a>"))
+                    speaker  = "Name Name",
+                    title    = "This is a title") %>%
+  mutate(link = paste0("<a href='", url, "' target='_blank'>", fname, "</a>")) %>%
+  tibble::rowid_to_column("Count") %>%
+  dplyr::select(Count, title, speaker, link, group)
   
 # 20200916
 df1 <- df %>%
   filter(group %in% c("20200916")) %>%
-  dplyr::select(link, note) %>%
-  tibble::rowid_to_column("Count")
+  dplyr::select(-group)
   
 # 20201001
 df2 <- df %>%
   filter(group %in% c("20201001")) %>%
-  dplyr::select(link, note) %>%
-  tibble::rowid_to_column("Count")
+  dplyr::select(-group)
 
 # 20201002
 df3 <- df %>%
   filter(group %in% c("20201002")) %>%
-  dplyr::select(link, note) %>%
-  tibble::rowid_to_column("Count")
+  dplyr::select(-group)
+
+# 20201008
+df4 <- df %>%
+  filter(group %in% c("20201008")) %>%
+  dplyr::select(-group)
 ```
 
 #### part1: 2020-09-16 uploaded
@@ -95,6 +122,12 @@ knitr::kable(df2)
 
 ```{r, echo = FALSE}
 knitr::kable(df3)
+```
+
+#### part4: 2020-10-08 uploaded
+
+```{r, echo = FALSE}
+knitr::kable(df4)
 ```
 
 <!-- + 01  -->
