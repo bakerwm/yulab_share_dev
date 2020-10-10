@@ -73,17 +73,20 @@ Yang Shi, Harvard Medical School
 suppressPackageStartupMessages(library(DT))
 suppressPackageStartupMessages(library(dplyr))
 
+# read list
+flist <- "2020-CSHL-Genetics-list.xlsx"
+vlist <- readxl::read_xlsx(flist, sheet = "Sheet1")
+
 # Reading the video list
 baseurl <- "http://159.226.118.232/upload/img/2020_CSHL_videos"
-vlist <- readLines("./video_list.txt")
-df    <- data.frame(group = dirname(vlist),
-                    fname = basename(vlist),
-                    url   = file.path(baseurl, vlist), 
-                    speaker  = "Name Name",
-                    title    = "This is a title") %>%
-  mutate(link = paste0("<a href='", url, "' target='_blank'>", fname, "</a>")) %>%
+
+df <- vlist %>%
+  tidyr::separate(filename, c("group", "fname"), sep = "/") %>%
+  dplyr::mutate(title = ifelse(title == "T.I.", fname, title),
+                url   = file.path(baseurl, group, fname),
+                link  = paste0("<a href='", url, "' target='_blank'>", title, "</a>") ) %>%
   tibble::rowid_to_column("Count") %>%
-  dplyr::select(Count, title, speaker, link, group)
+  dplyr::select(count, speaker, link, group)
   
 # 20200916
 df1 <- df %>%
@@ -103,6 +106,11 @@ df3 <- df %>%
 # 20201008
 df4 <- df %>%
   filter(group %in% c("20201008")) %>%
+  dplyr::select(-group)
+
+# 20201009
+df5 <- df %>%
+  filter(group %in% c("20201009")) %>%
   dplyr::select(-group)
 ```
 
@@ -129,6 +137,13 @@ knitr::kable(df3)
 ```{r, echo = FALSE}
 knitr::kable(df4)
 ```
+
+#### part5: 2020-10-09 uploaded
+
+```{r, echo = FALSE}
+knitr::kable(df5)
+```
+
 
 <!-- + 01  -->
 
