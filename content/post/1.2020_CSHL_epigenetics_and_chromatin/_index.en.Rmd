@@ -12,62 +12,31 @@ output:
     keep_md: yes
 ---
 
-<!--
-### Videos on Yulab Cloud
-
-~[Click here](http://192.168.206.171/yulab_cloud/index.php/s/XaDaxZFb2c6Pbk9), find the videos uploaded by Yu and Yuan.~ 
-
-~~Click here, find the videos uploaded by Yu and Yuan~~ [本链接已失效，请改用FTP工具上传，详情咨询课题组微信群]
-
--->
+#### The Meeting Info:
 
 
-#### 视频上传通道
++ Meeting - 1
 
-1. 下载工具：`FileZilla`: [windows 64位绿色版](https://download.filezilla.cn/client/windows/FileZilla_3.50.0_win64.zip);   [其他版本](https://www.filezilla.cn/download/client)
+Title: 2020 CSHL Epigenetics & Chromatin
 
-2. 解压缩下载的文件 `FileZilla_3.50.0_win64.zip`, 找到文件夹内的 `FileZilla.exe`，双击打开。
+Date: September 15 - 18 2020 Virtual    
 
-3. 在`FileZilla`软件顶部区域输入如下信息，随后点击`快速连接` 
-
-```
-地址：   159.226.118.232  
-用户名： temp001
-密码：   <课题组通用密码>  
-端口：   21
-```
-
-4. 在`Filezilla`软件中部操作区：左侧是**本地电脑**；右侧是**远程服务器**；
-
-右侧 选择 `upload`；左侧 选择视频存放的文件夹，右键选择需要上传的文件，点击**上传**，即可！
+The official [website](https://meetings.cshl.edu/meetings.aspx?meet=EPICH&year=20), and the meeting [Program](http://159.226.118.232/upload/img/2020_CSHL_videos/2020-CSHL-Epigenitics-Chromatin-meeting-program.pdf) - saved on Yulab Cloud. Here are the meeting [Abstract](http://159.226.118.232/upload/img/2020_CSHL_videos/2020-CSHL-Epigenitics-Chromatin-Abstract.pdf)
 
 
++ Meeting - 2
+
+Title: 
+
+Date: 
+
+The official [website]()
 
 
-### Meeting
+#### Video list
 
-September 15 - 18 2020 Virtual    
-Abstract Deadline: June 26, 2020    
+Here is the full table of the videos [2020-CSHL-Genetics-list.xlsx](2020-CSHL-Genetics-list.xlsx)
 
-The official [website](https://meetings.cshl.edu/meetings.aspx?meet=EPICH&year=20)    
-
-The meeting [Program](http://159.226.118.232/upload/img/2020_CSHL_videos/2020-CSHL-Epigenitics-Chromatin-meeting-program.pdf) - saved on Yulab Cloud.      
-
-The meeting [Abstract](http://159.226.118.232/upload/img/2020_CSHL_videos/2020-CSHL-Epigenitics-Chromatin-Abstract.pdf)
-
-Organizers:
-
-Anja Groth, CPR, University of Copenhagen, Denmark  
-
-Kristian Helin, Memorial Sloan Kettering Cancer Center
-
-Yang Shi, Harvard Medical School
-
-### Highlight: 
-
-+ [Susan Gasser](/yulab_share/post/1.2020_cshl_epigenetics_and_chromatin/susan_gasser/) - Friedrich Miescher Institute for Biomedical Research, Switzerland
-
-### 2020 CSHL videos 
 
 ```{r, echo = FALSE}
 suppressPackageStartupMessages(library(DT))
@@ -112,7 +81,19 @@ df4 <- df %>%
 df5 <- df %>%
   filter(group %in% c("20201009")) %>%
   dplyr::select(-group)
+
+# 20201010
+df6 <- df %>%
+  filter(group %in% c("20201010")) %>%
+  dplyr::select(-group)
+
+# 20201124, for chenkai
+df7 <- df %>%
+  filter(group %in% c("for_chenkai")) %>%
+  dplyr::select(-group)
+
 ```
+
 
 #### part1: 2020-09-16 uploaded
 
@@ -120,11 +101,14 @@ df5 <- df %>%
 knitr::kable(df1)
 ```
 
+
 #### part2: 2020-10-01 uploaded
 
 ```{r, echo = FALSE}
 knitr::kable(df2)
 ```
+
+
 
 #### part3: 2020-10-02 uploaded
 
@@ -138,10 +122,25 @@ knitr::kable(df3)
 knitr::kable(df4)
 ```
 
+
 #### part5: 2020-10-09 uploaded
 
 ```{r, echo = FALSE}
 knitr::kable(df5)
+```
+
+#### part6: 2020-10-10 uploaded
+
+```{r, echo = FALSE}
+knitr::kable(df6)
+```
+
+
+
+#### part7: 2020-11-24 uploaded (for ChenKai)
+
+```{r, echo = FALSE}
+knitr::kable(df7)
 ```
 
 

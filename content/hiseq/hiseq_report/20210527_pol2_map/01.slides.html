@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>ATACseq report</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ming Wang" />
+    <meta name="date" content="2021-05-27" />
+    <script src="libs/header-attrs-2.8/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <script src="libs/mark.js-8.11.1/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search-0.0.1/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search-0.0.1/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, top, my-title, title-slide
+
+# ATACseq report
+## HiSeq report
+### Ming Wang
+### 2021-05-27
+
+---
+
+
+
+
+
+
+
+
+
+
+
+# Summary 
+
+A summary table: 
+
+---
+# Background
+
++ **Hiseq**:  CUT&amp;TAG
+
++ **Species**: Fruitfly (dm6)
+
++ **Sample**: 
+
+  - Tethering: `Pcf11`, `RFP`  
+  - IP: `Pol II`, `IgG`  
+
+---
+# 1. Number of reads 
+
+![](Figures/01.total_reads-1.png)&lt;!-- --&gt;
+
++ clean: No. of clean reads (million)
++ too_short: No. of reads removed, too short in length (&lt;20nt)
+
+
+---
+# 2. Mapping rate 
+
+Check **chrM%**, **unmap%**, ...
+
+![](Figures/02.map_rate-1.png)&lt;!-- --&gt;
+
+
+---
+# 3. Number of peaks, FRiP
+
+The FRiP score is defined as the **f**raction of **r**eads that fall **i**nto a **p**eak.     
+([ENCODE criteria](https://www.encodeproject.org/atac-seq/): &gt; 0.3, or &gt;0.2)
+
+Number of peaks: &gt;10,000 (fruitfly); &gt;150,000 (human) [ENCODE]
+
+![](Figures/03.peak_number-1.png)&lt;!-- --&gt;
+
+---
+# 4. Fragment length 
+
+The fragment size of the ATACseq (Buenrostro et al., 2013, Nature Methods, Figure 2a)
+
+- &lt;100 bp: nucleosome free (NFR)   
+- 200 bp : single nucleosome   
+- 400 bp : dimer  
+- ...
+
+![](Figures/04.frag_length-1.png)&lt;!-- --&gt;
+
+
+---
+# 5. TSS enrichment 
+
+.panelset[]
+
+
+---
+# 6. Genebody enrichment 
+
+.panelset[]
+
+
+---
+# 7. Correlation - Peak overlap
+
+.panelset[.panel[.panel-name[1]## CUT_Tag_Dvirfl10b_unf_rfp_terthering_IgG.png&lt;img src="Figures/peak_overlap_enrich/CUT_Tag_Dvirfl10b_unf_rfp_terthering_IgG.png" alt="figure" style="height:50%;width:50%"&gt;]
+.panel[.panel-name[2]## CUT_Tag_Dvirfl10b_unf_rfp_terthering_Pol_II.png&lt;img src="Figures/peak_overlap_enrich/CUT_Tag_Dvirfl10b_unf_rfp_terthering_Pol_II.png" alt="figure" style="height:50%;width:50%"&gt;]
+.panel[.panel-name[3]## CUTTAG_Dvirfl10b_UNF_PCF11E_IgG_enrich.png&lt;img src="Figures/peak_overlap_enrich/CUTTAG_Dvirfl10b_UNF_PCF11E_IgG_enrich.png" alt="figure" style="height:50%;width:50%"&gt;]
+.panel[.panel-name[4]## CUTTAG_Dvirfl10b_UNF_PCF11E_pol_II_enrich.png&lt;img src="Figures/peak_overlap_enrich/CUTTAG_Dvirfl10b_UNF_PCF11E_pol_II_enrich.png" alt="figure" style="height:50%;width:50%"&gt;]]
+
+
+---
+# 8. Correlation - PCA
+
+
+.panelset[.panel[.panel-name[1]## CUT_Tag_Dvirfl10b_unf_rfp_terthering_IgG.png&lt;img src="Figures/bam_cor_pca/CUT_Tag_Dvirfl10b_unf_rfp_terthering_IgG.png" alt="figure" style="height:70%;width:70%"&gt;]
+.panel[.panel-name[2]## CUT_Tag_Dvirfl10b_unf_rfp_terthering_Pol_II.png&lt;img src="Figures/bam_cor_pca/CUT_Tag_Dvirfl10b_unf_rfp_terthering_Pol_II.png" alt="figure" style="height:70%;width:70%"&gt;]
+.panel[.panel-name[3]## CUTTAG_Dvirfl10b_UNF_PCF11E_IgG_enrich.png&lt;img src="Figures/bam_cor_pca/CUTTAG_Dvirfl10b_UNF_PCF11E_IgG_enrich.png" alt="figure" style="height:70%;width:70%"&gt;]
+.panel[.panel-name[4]## CUTTAG_Dvirfl10b_UNF_PCF11E_pol_II_enrich.png&lt;img src="Figures/bam_cor_pca/CUTTAG_Dvirfl10b_UNF_PCF11E_pol_II_enrich.png" alt="figure" style="height:70%;width:70%"&gt;]]
+
+
+
+---
+# 9. Correlation - correlation
+
+Check the correlation between replicates (Pearson, r).
+
+![](Figures/09.bam_cor_heatmap-1.png)&lt;!-- --&gt;
+
+
+---
+# 10. Correlation - enrichment
+
+This is adapted from `ChIPseq` quality control, to check the ip enrichment. see [Diaz et al.](https://github.com/songlab/chance/wiki/CHANCE-Manual#checking-the-strength-of-enrichment-in-the-ip)
+
+.panelset[.panel[.panel-name[1]## CUT_Tag_Dvirfl10b_unf_rfp_terthering_IgG.png&lt;img src="Figures/fingerprint_enrich/CUT_Tag_Dvirfl10b_unf_rfp_terthering_IgG.png" alt="figure" style="height:60%;width:60%"&gt;]
+.panel[.panel-name[2]## CUT_Tag_Dvirfl10b_unf_rfp_terthering_Pol_II.png&lt;img src="Figures/fingerprint_enrich/CUT_Tag_Dvirfl10b_unf_rfp_terthering_Pol_II.png" alt="figure" style="height:60%;width:60%"&gt;]
+.panel[.panel-name[3]## CUTTAG_Dvirfl10b_UNF_PCF11E_IgG_enrich.png&lt;img src="Figures/fingerprint_enrich/CUTTAG_Dvirfl10b_UNF_PCF11E_IgG_enrich.png" alt="figure" style="height:60%;width:60%"&gt;]
+.panel[.panel-name[4]## CUTTAG_Dvirfl10b_UNF_PCF11E_pol_II_enrich.png&lt;img src="Figures/fingerprint_enrich/CUTTAG_Dvirfl10b_UNF_PCF11E_pol_II_enrich.png" alt="figure" style="height:60%;width:60%"&gt;]]
+
+
+---
+
+**That all!**
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

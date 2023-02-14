@@ -40,15 +40,8 @@ keywords: ["WiFi", "Phone"]
 
 网址：[http://192.168.50.9](http://192.168.50.9/)    
 
-```
-安装和激活简要步骤：    
-1. 登录  http://192.168.50.9/    
-ID：yuyang-lab， Password：***@***
-2. 在下载软件的页面记录两个信息：软件名称，激活码  
-3. 按照 默认 设置安装软件    
-4. 运行 激活客户端，依次输入 账号 和 激活码    
-5. 等待 几分钟，即可完成激活（需要联网）  
-```
+**在实验室微信群里询问，账号、密码**  
+
 
 ## 2.3 其他软件
 
@@ -64,6 +57,30 @@ ID：yuyang-lab， Password：***@***
 
 
 `SnapGene`是一款强大的分子生物学软件，使您能够记录DNA构建体，而无需处理复杂的工具或工作流程。然后可以将数据导出为与设计用于DNA序列的其他流行软件解决方案兼容的文件格式。
+
+
+请查看官方网站：[https://www.snapgene.com/](https://www.snapgene.com/),下载正版软件，可以申请两周 **Free Trial**，另外，如果不需要使用编辑功能，可以免费试用官方正版的 [SnapGene Viewer](https://www.snapgene.com/snapgene-viewer/)。
+
+**使用方法**： 
+
+```
+（电脑上已经安装过SnapGene，请从步骤1开始；）
+（没有装过SnapGene，直接从步骤3开始）
+
+1. 运行 geek.exe
+
+2. 选择SnapGene, "操作" -> "卸载"，按提示操作
+
+3. 运行snapgene_4.1.9_win_2.exe安装；
+
+4. 复制Crack文件夹中的ActivationCrack.exe到snapgene的安装文件夹内，右键以管理员运行，点patch；
+
+5. 复制Crack文件夹中的Snapgene.exe到snapgene的安装文件夹内，覆盖原文件；
+
+6. enjoy。
+```
+
+
 
 SnapGene 4.1.9 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/3JwzKrF3ZRTmbgL)  
 
@@ -81,12 +98,12 @@ SnapGene 4.1.9 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/3Jw
 
 `Graphpad Prism`是由Graphpad公司推出的一款非常实用的医学绘图软件，集生物统计、曲线拟合和科技绘图于一体可用于Windows和Mac电脑，在生物学以及社会和物理科学界得到广泛使用。[官网链接](https://www.graphpad.com/scientific-software/prism/)
 
-  - Graphpad prism 8 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/g4ifjGnHmenxWHs)
+  - Graphpad prism 8 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/8F4gA6qCey5Mq9W)
 
 
 ### 2.3.3 图像处理 - Image studio    
 
-Image studio [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/pbQQw28SMs24z6m)
+Image studio [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/r89dgBk5xZoWR9f)
 
 
 ### 2.3.4 Flowjo VX 
@@ -95,7 +112,7 @@ Image studio [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/pbQQw
   <img target="_blank" rel="noopener noreferrer" src="flowjo-vx-logo.png" alt="gflowjo-vx-logo" target="_blank" width="400" height="100%">
 </figure>
 
-Flowjo VX [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/WaToYnzNkc64AkP)    
+Flowjo VX [下载地址](http://192.168.206.171/yulab_cloud/index.php/s/Xm5EApD3FQipY5F)    
 
 
 ### 2.3.5 引物设计 Premier Primer 5.0  
@@ -112,7 +129,7 @@ Premier Primer 5.0 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s
 
 `FileZilla` 客户端是一个快速可靠的、跨平台的FTP,FTPS和SFTP客户端。具有图形用户界面(GUI)和很多有用的特性。
 
-[官网下载](https://filezilla-project.org/download.php?type=client)， [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/waiytptRtbgNwHt)
+[官网下载](https://filezilla-project.org/download.php?type=client)， [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/RaLCaotDw2ZCb6T)
 
 
 
@@ -125,7 +142,7 @@ Premier Primer 5.0 [下载地址](http://192.168.206.171/yulab_cloud/index.php/s
 `MobaXterm`是一款非常强大的终端增强工具，除了支持基本`SSH`终端管理之外，还有非常多扩赞功能。    
 Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more
 
-[官网下载](https://mobaxterm.mobatek.net/download.html), [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/ZWwDoa5FqSXatga) MobaXterm v11.0 protable; 
+[官网下载](https://mobaxterm.mobatek.net/download.html), [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/ec246JjzkC4BkYm) MobaXterm v11.0 protable; 
 
 
 ### 2.3.8 文本编辑 - Notepad ++  
@@ -136,7 +153,7 @@ Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools 
 
 `Notepad ++`是一个用于编写文本的免费开源应用程序。`Notepad ++`是一个功能强大的编辑器，非常适合编程和普通文本。
 
-[官网下载](https://notepad-plus-plus.org/download/v7.6.2.html), [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/dfYGJ6BJ54bAznn)
+[官网下载](https://notepad-plus-plus.org/download/v7.6.2.html), [本站下载](http://192.168.206.171/yulab_cloud/index.php/s/emYwHrEmNYGpNKE)
 
 
 
@@ -149,6 +166,8 @@ Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools 
 参考知乎回答：[有哪些值得推荐的电脑录屏软件与手机录屏软件？](https://www.zhihu.com/question/22371082) - by `霸都、傲天`
 
 1. 通过 **录频工具** 录制视频，例如：开源工具  [Captura](https://mathewsachin.github.io/Captura/), [下载地址](https://github.com/MathewSachin/Captura/releases/download/v8.0.0/Captura-Setup.exe), 同时下载辅助工具 [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
+
+本站下载地址: [Capture](http://192.168.206.171/yulab_cloud/index.php/s/atFbCMC4yJPBLoz), [FFMpeg](http://192.168.206.171/yulab_cloud/index.php/s/8Dai58kPwekBWan)
 
 2. 双击运行 `Captura-Setup.exe`，按照默认方式安装；
 

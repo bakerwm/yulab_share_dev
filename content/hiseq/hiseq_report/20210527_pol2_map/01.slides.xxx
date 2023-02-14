@@ -1,0 +1,261 @@
+---
+title: "ATACseq report"
+subtitle: "HiSeq report"
+author: "Ming Wang"
+institute: ""
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [default, metropolis, metropolis-fonts]
+    nature:
+      titleSlideClass: ["middle", "top", "my-title"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+suppressPackageStartupMessages(library(knitr))
+
+knitr::opts_chunk$set(fig.width  = 12, 
+                      fig.height = 8, 
+                      fig.path   = "Figures/",
+                      echo       = FALSE,
+                      cache      = FALSE,
+                      prompt     = FALSE,
+                      tidy       = FALSE,
+                      comment    = NA,
+                      message    = FALSE,
+                      warning    = FALSE,
+                      eval       = T,
+                      rownames.print = FALSE)
+```
+
+
+```{r, echo = FALSE}
+library(xaringan)
+library(xaringanExtra)
+library(hiseqr)
+library(dplyr)
+library(ggplot2)
+library(DT)
+library(patchwork)
+prj_dir <- "/data/yulab/wangming/work/yu_2021/projects/20210527_pol2_map/results/ATACseq"
+pd <- summary_hiseq(prj_dir, TRUE)
+
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_search(show_icon = TRUE)
+xaringanExtra::use_panelset()
+```
+
+
+# Summary 
+
+A summary table: 
+
+---
+# Background
+
++ **Hiseq**:  CUT&TAG
+
++ **Species**: Fruitfly (dm6)
+
++ **Sample**: 
+
+  - Tethering: `Pcf11`, `RFP`  
+  - IP: `Pol II`, `IgG`  
+
+---
+# 1. Number of reads 
+
+```{r 01.total_reads, echo = FALSE, fig.height = 4}
+p1 <- plot_hiseq_trim(prj_dir, position = "fill")
+print(p1)
+```
+
++ clean: No. of clean reads (million)
++ too_short: No. of reads removed, too short in length (<20nt)
+
+
+---
+# 2. Mapping rate 
+
+Check **chrM%**, **unmap%**, ...
+
+```{r 02.map_rate, echo = FALSE, fig.height = 4}
+p2 <- plot_hiseq_align(prj_dir, mode = 3)
+print(p2)
+```
+
+
+---
+# 3. Number of peaks, FRiP
+
+The FRiP score is defined as the **f**raction of **r**eads that fall **i**nto a **p**eak.     
+([ENCODE criteria](https://www.encodeproject.org/atac-seq/): > 0.3, or >0.2)
+
+Number of peaks: >10,000 (fruitfly); >150,000 (human) [ENCODE]
+
+```{r 03.peak_number, echo = FALSE, fig.height = 4}
+p3a <- plot_hiseq_peak(prj_dir, hiseq_type = TRUE)
+
+if(nrow(pd$frip) > 0) {
+  p3b <- pd$frip %>%
+    hiseqr::bar_plot(x = "pct", y = "id", direction = "horizontal",
+                     label = NA) + 
+    geom_vline(xintercept = c(0.2, 0.3), size = .5, color = c("blue", "red"),
+               linetype = 2) +
+    theme(
+      axis.title.y = element_blank(),
+      axis.text.y = element_blank(),
+      axis.title.x = element_blank()
+    )
+} else {
+  p3b <- grid::textGrob('not available')
+}
+
+patchwork::wrap_plots(p3a, p3b, nrow = 1)
+```
+
+---
+# 4. Fragment length 
+
+The fragment size of the ATACseq (Buenrostro et al., 2013, Nature Methods, Figure 2a)
+
+- <100 bp: nucleosome free (NFR)   
+- 200 bp : single nucleosome   
+- 400 bp : dimer  
+- ...
+
+```{r 04.frag_length, echo=FALSE, fig.height=5}
+p4 <- plot_hiseq_lendist(prj_dir, hiseq_type = TRUE)
+print(p4)
+```
+
+
+---
+# 5. TSS enrichment 
+
+```{r, echo = FALSE, results = "asis"}
+# merge list
+tss_list <- list_hiseq_file(prj_dir, "tss_enrich_png", "rn")
+tss_list <- purrr::keep(tss_list, file.exists)
+# copy files to local dir
+tss_dir <- "Figures/tss_enrich"
+if(! dir.exists(tss_dir)) dir.create(tss_dir, recursive = TRUE)
+for(f in tss_list) {
+  fn <- basename(dirname(dirname(f)))
+  fo <- file.path(tss_dir, paste0(fn, ".png"))
+  file.copy(f, fo, overwrite = TRUE, recursive = TRUE)
+}
+tss_local <- list.files(tss_dir, "*.png$", full.names = TRUE)
+# show
+hiseqr::fig_to_panel(tss_local, nm = 1, style = "height:70%;width:70%")
+```
+
+
+---
+# 6. Genebody enrichment 
+
+```{r, echo = FALSE, results = "asis"}
+# merge list
+genebody_list <- list_hiseq_file(prj_dir, "genebody_enrich_png", "rn")
+genebody_list <- purrr::keep(genebody_list, file.exists)
+# copy files to local dir
+genebody_dir <- "Figures/genebody_enrich"
+if(! dir.exists(genebody_dir)) dir.create(genebody_dir, recursive = TRUE)
+for(f in genebody_list) {
+  fn <- basename(dirname(dirname(f)))
+  fo <- file.path(genebody_dir, paste0(fn, ".png"))
+  file.copy(f, fo, overwrite = TRUE, recursive = TRUE)
+}
+genebody_local <- list.files(genebody_dir, "*.png$", full.names = TRUE)
+# show
+hiseqr::fig_to_panel(genebody_local, nm = 1, style = "height:70%;width:70%")
+```
+
+
+---
+# 7. Correlation - Peak overlap
+
+```{r, echo = FALSE, results = "asis"}
+# merge list
+ov_list <- list_hiseq_file(prj_dir, "peak_overlap_png", "rn")
+ov_list <- purrr::keep(ov_list, file.exists)
+# copy files to local dir
+ov_dir <- "Figures/peak_overlap_enrich"
+if(! dir.exists(ov_dir)) dir.create(ov_dir, recursive = TRUE)
+for(f in ov_list) {
+  fn <- basename(dirname(dirname(f)))
+  fo <- file.path(ov_dir, paste0(fn, ".png"))
+  file.copy(f, fo, overwrite = TRUE, recursive = TRUE)
+}
+ov_local <- list.files(ov_dir, "*.png$", full.names = TRUE)
+# show
+hiseqr::fig_to_panel(ov_local, nm = 1, style = "height:50%;width:50%")
+```
+
+
+---
+# 8. Correlation - PCA
+
+
+```{r, echo = FALSE, results = "asis"}
+# merge list
+pca_list <- list_hiseq_file(prj_dir, "bam_cor_pca_png", "rn")
+pca_list <- purrr::keep(pca_list, file.exists)
+# copy files to local dir
+pca_dir <- "Figures/bam_cor_pca"
+if(! dir.exists(pca_dir)) dir.create(pca_dir, recursive = TRUE)
+for(f in pca_list) {
+  fn <- basename(dirname(dirname(f)))
+  fo <- file.path(pca_dir, paste0(fn, ".png"))
+  file.copy(f, fo, overwrite = TRUE, recursive = TRUE)
+}
+pca_local <- list.files(pca_dir, "*.png$", full.names = TRUE)
+# show
+hiseqr::fig_to_panel(pca_local, nm = 1, style = "height:70%;width:70%")
+```
+
+
+
+---
+# 9. Correlation - correlation
+
+Check the correlation between replicates (Pearson, r).
+
+```{r 09.bam_cor_heatmap, echo = FALSE, fig.width=7, fig.height=5}
+plot_hiseq_bam_cor(prj_dir)
+```
+
+
+---
+# 10. Correlation - enrichment
+
+This is adapted from `ChIPseq` quality control, to check the ip enrichment. see [Diaz et al.](https://github.com/songlab/chance/wiki/CHANCE-Manual#checking-the-strength-of-enrichment-in-the-ip)
+
+```{r, echo = FALSE, results = "asis"}
+# merge list
+fp_list <- list_hiseq_file(prj_dir, "bam_fingerprint_png", "rn")
+fp_list <- purrr::keep(fp_list, file.exists)
+# copy files to local dir
+fp_dir <- "Figures/fingerprint_enrich"
+if(! dir.exists(fp_dir)) dir.create(fp_dir, recursive = TRUE)
+for(f in fp_list) {
+  fn <- basename(dirname(dirname(f)))
+  fo <- file.path(fp_dir, paste0(fn, ".png"))
+  file.copy(f, fo, overwrite = TRUE, recursive = TRUE)
+}
+fp_local <- list.files(fp_dir, "*.png$", full.names = TRUE)
+# show
+hiseqr::fig_to_panel(fp_local, nm = 1, style = "height:60%;width:60%")
+```
+
+
+---
+
+**That all!**
